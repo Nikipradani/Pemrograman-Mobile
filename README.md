@@ -1,7 +1,7 @@
 # Kelompok J sdgs15
 
 # Anggota Kelompok :
-- Alif Rachman Saputro 182410102058
+1. Alif Rachman Saputro 182410102058
 - Firratus Saadah 182410102004
 - Niki Putri Hadi Pradani 182410102072
 
