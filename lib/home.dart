@@ -74,40 +74,7 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.only(top: 340.250),
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                  height: 50,
-                  width:204,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(0.5), color: Colors.green,
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      Text("Artikel", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
-                      ),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 410.250),
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                  height: 50,
-                  width:204,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(0.5), color: Colors.green,
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      Text("Quis", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
-                      ),
-                      )
-                    ],
-                  ),
-                ),
+
             ],
             ),
           );
