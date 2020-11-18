@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sdgs15/artikel.dart';
+import 'package:sdgs15/hewan.dart';
+import 'package:sdgs15/quis.dart';
+import 'package:sdgs15/tumbuhan.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,6 +18,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Container(
                   decoration: BoxDecoration(
+
                       image: DecorationImage(
                           image: AssetImage('assets/img/Dashboard.png'), fit: BoxFit.cover
                       )
@@ -51,12 +56,16 @@ class _HomeState extends State<Home> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text("Tumbuhan Langka", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
-                      ),
-                      )
+                      InkWell(onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => tumbuhan()),
+                        );
+                      },
+                       child: Text("Tumbuhan Langka", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
+                       ),
+                      ),),
                     ],
                   ),
-                ),
+                ) ,
                 Container(
                   margin: EdgeInsets.only(top: 270.250),
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -68,9 +77,14 @@ class _HomeState extends State<Home> {
                   ),
                   child: Column(
                     children: <Widget>[
-                      Text("Hewan Langka",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white,
+                      InkWell(onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => hewan()),
+                        );
+                      },
+                      child : Text("Hewan Langka",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white,
                       ),
-                      )
+                      ),
+                      ),
                     ],
                   ),
                 ),
@@ -85,9 +99,14 @@ class _HomeState extends State<Home> {
                   ),
                   child: Column(
                     children: <Widget>[
-                      Text("Artikel", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
+                      InkWell(onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => artikel()),
+                      );
+                      },
+                      child : Text("Artikel", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
                       ),
-                      )
+                      ),
+                      ),
                     ],
                   ),
                 ),
@@ -102,9 +121,14 @@ class _HomeState extends State<Home> {
                   ),
                   child: Column(
                     children: <Widget>[
-                      Text("Quis", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
+                      InkWell(onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => quis()),
+                      );
+                      },
+                      child : Text("Quis", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white
                       ),
-                      )
+                      ),
+                      ),
                     ],
                   ),
                 ),

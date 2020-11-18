@@ -59,7 +59,9 @@ class StartAnimation extends StatefulWidget {
         )
             : CircularProgressIndicator(strokeWidth: 1.0, valueColor: AlwaysStoppedAnimation<Color>(Colors.white)
           ),)
-    :user=='idr' ?
+    :user=='kelompokj' ?
+
+
          Container(
 
       width: zoomAnimation.value,
@@ -103,14 +105,13 @@ class _StartAnimationState extends State<StartAnimation> {
   Widget build(BuildContext context) {
     widget.buttonController.addListener(() {
       if(widget.zoomAnimation.isCompleted){
-        if (widget.user == 'idr'){
+        if (widget.user == 'kelompokj' && widget.pass =='sdgs15'){
           Navigator.of(context).push(
             MaterialPageRoute(
             builder: (BuildContext contex) => new Home()
             )
           );
         }
-
       }
     });
     return new AnimatedBuilder(
