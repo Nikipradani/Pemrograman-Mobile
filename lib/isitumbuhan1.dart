@@ -63,9 +63,13 @@ class _isitumbuhan1State extends State<isitumbuhan1> {
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga raflesia merupakan salah satu tumbuhan langka yang di lindungi di indonesia.",
+                child: Text("Bunga raflesia merupakan salah satu tumbuhan langka yang di lindungi di indonesia."
+                    "raflesia adalah genus tumbuhan parasit. ia di temukan di hutan hujan indonesia oleh seorang"
+                    "pemandu dari indonesia yg bekerja untuk Rr. Joseph Arnold tahun 1818, dan di namai berdasarkan nama "
+                    "Thomas Stamford Raffles Pemimpin ekspedisi itu.",
                     style:
-                    TextStyle(fontSize: 11,color: Colors.black87)),
+                    TextStyle(fontSize: 15,color: Colors.black87)),
+
               )
             ],
           ),

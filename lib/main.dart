@@ -4,6 +4,8 @@ import 'package:flutter/animation.dart';
 import 'package:sdgs15/LoginAnimation.dart';
 import 'package:flutter/scheduler.dart';
 
+import 'daftar.dart';
+
 void main() => runApp(new MyApp()); //bagian main
 
 class MyApp extends StatelessWidget {
@@ -116,7 +118,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin{
                       ),),
                       FlatButton(padding: const EdgeInsets.only(top: 100.0,bottom: 30.0),
                       onPressed: null,
-                        child: Text("Don't have an account? Sign Up here",
+                        child: Text("",
                         style: TextStyle(
                         fontSize: 12.0,
                         color: Colors.black54,
@@ -128,7 +130,39 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin{
                   ),
 
                 ),
+
               ],),
+                Container(
+                  margin: EdgeInsets.only(top: 480.250),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                  height: 50,
+                  width:280,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(30.0), color: Colors.green,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.green.withOpacity(0),
+                          spreadRadius: 2,
+                          blurRadius: 10,
+                          offset: Offset(0, 6))
+                    ],
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      InkWell(onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return Daftar();
+                        }),
+                        );
+                      },
+                        child : Text("Sign Up", textAlign: TextAlign.center,style: TextStyle(fontSize: 20, color: Colors.white
+                        ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                  statusClick==0
                  ? new InkWell(
                   onTap: (){

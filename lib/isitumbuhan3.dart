@@ -63,9 +63,13 @@ class _isitumbuhan3State extends State<isitumbuhan3> {
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga raflesia merupakan salah satu tumbuhan langka yang di lindungi di indonesia.",
+                child: Text("Bunga Anggrek Bulan merupakan salah satu tumbuhan langka yang di lindungi di indonesia. "
+                    "Anggrek Bulan atau puspa pesona adalah salah satu bunga nasional indonesia. pertama kali di temukan "
+                    "oleh seorang ahli botani belanda, Dr. C. L. Blume. Tanaman anggrek ini tersebar luas mulai dari "
+                    "Malaysia, Indonesia, Filipina, Papua, hingga ke Australia. Cara hidupnya secara epifit dengan menempel"
+                    "pada batang atau cabang pohon di hutan-hutan dan tumbuh subur hingga 600 meter di atas permukaan laut.",
                     style:
-                    TextStyle(fontSize: 11,color: Colors.black87)),
+                    TextStyle(fontSize: 15,color: Colors.black87)),
               )
             ],
           ),

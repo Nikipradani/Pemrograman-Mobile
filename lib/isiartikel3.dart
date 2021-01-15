@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sdgs15/tumbuhan.dart';
+import 'package:sdgs15/artikel.dart';
 
-class isitumbuhan2 extends StatefulWidget {
+class isiartikel3 extends StatefulWidget {
   @override
-  _isitumbuhan2State createState() => _isitumbuhan2State();
+  _isiartikel3State createState() => _isiartikel3State();
 }
 
-class _isitumbuhan2State extends State<isitumbuhan2> {
+class _isiartikel3State extends State<isiartikel3> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +23,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
                   onTap: (){
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context){
-                          return tumbuhan();
+                          return artikel();
                         }));
                   },
                   child: Icon(
                     Icons.arrow_back,color: Colors.white,size: 30,
                   ),
                 ),
-                Text("Edelweis Jawa",
+                Text("Berita Terkini",
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
@@ -44,29 +44,30 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
             children:<Widget> [
               Padding(
                 padding: const EdgeInsets.all(12),
-                child: Text('Bunga Edelweis Jawa',
+                child: Text('Ini, Tumbuhan Pertama di Bumi, Bisa Hancurkan Bebatuan',
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.lightGreen)),
               ),
-              Image.asset("assets/img/edelweis.jpg"),
+              Image.asset("assets/img/lumut.jpg"),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/img/raflesia.jpg"),
+                  backgroundImage: AssetImage("assets/img/author.jpg"),
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Oleh : Firratus Saadah',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
+                    Text('Oleh : Alif Rachman Saputro',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                     Text('18 November 2020',style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold,color: Colors.grey)),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga edelweis jawa terancam punah saat ini, Anaphalis javanica, atau yang secara "
-                    "populer sebagai edelweis jawa atau Bunga Senduro, adalah tumbuhan endemik zona alpina/montana"
-                    "di berbagai pegunungan tinggi Nusantara. Tumbuhan ini dapat mencapai ketinggian 8 meter dan dapat "
-                    "memiliki batang besar kaki manusia walaupun umumnya tidak melebihi 1 meter.",
+                child: Text("Jangan pernah meremehkan lumut, ketika tanaman sederhana pertama kali tiba di darat, hampir setengah "
+                    "miliar tahun yang lalu, mereka memicu zaman es dan kepunahan masal kehidupan laut "
+                    "Sekitar 35 juta tahun kemudian, lapisan es menutupi sebagian besar planet secara singkat dan terjadi kepunahan massal. "
+                    "Tingkat karbon dioksida mungkin turun tajam sebelum es tiba, tapi tidak ada yang tahu mengapa. "
+                    "Tim Lenton dari University of Exeter, Inggris, dan rekannya berpikir bahwa lumut adalah penyebabnya. ",
                     style:
                     TextStyle(fontSize: 15,color: Colors.black87)),
               )

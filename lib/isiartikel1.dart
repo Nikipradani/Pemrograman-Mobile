@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sdgs15/tumbuhan.dart';
+import 'package:sdgs15/artikel.dart';
 
-class isitumbuhan2 extends StatefulWidget {
+class isiartikel1 extends StatefulWidget {
   @override
-  _isitumbuhan2State createState() => _isitumbuhan2State();
+  _isiartikel1State createState() => _isiartikel1State();
 }
 
-class _isitumbuhan2State extends State<isitumbuhan2> {
+class _isiartikel1State extends State<isiartikel1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +23,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
                   onTap: (){
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context){
-                          return tumbuhan();
+                          return artikel();
                         }));
                   },
                   child: Icon(
                     Icons.arrow_back,color: Colors.white,size: 30,
                   ),
                 ),
-                Text("Edelweis Jawa",
+                Text("Berita Terkini",
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
@@ -44,31 +44,34 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
             children:<Widget> [
               Padding(
                 padding: const EdgeInsets.all(12),
-                child: Text('Bunga Edelweis Jawa',
+                child: Text('Upaya Menyelamatkan Badak Kalimantan dari Kepunahan',
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.lightGreen)),
               ),
-              Image.asset("assets/img/edelweis.jpg"),
+              Image.asset("assets/img/berita1.jpg"),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/img/raflesia.jpg"),
+                  backgroundImage: AssetImage("assets/img/author.jpg"),
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Oleh : Firratus Saadah',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
+                    Text('Oleh : Niki Putri Hadi Pradani',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                     Text('18 November 2020',style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold,color: Colors.grey)),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga edelweis jawa terancam punah saat ini, Anaphalis javanica, atau yang secara "
-                    "populer sebagai edelweis jawa atau Bunga Senduro, adalah tumbuhan endemik zona alpina/montana"
-                    "di berbagai pegunungan tinggi Nusantara. Tumbuhan ini dapat mencapai ketinggian 8 meter dan dapat "
-                    "memiliki batang besar kaki manusia walaupun umumnya tidak melebihi 1 meter.",
+                child: Text("Jejak tapak kaki sepanjang 20 cm itu masih segar. kedalamannya mengisyaratkan pemilik jejak merupakan"
+                    " satwa berukuran besar. sisa hujan semalam gagal mengaburkan keberadaan satwa yang di duga kuat adalah badak "
+                    "Alert memang memantau pergerakan jelajah badak di kawasan Hutan Nyaribungan Mahakam Ulu Kalimantan Timur (Kaltim). "
+                    "Badak betina yang diberi nama Pari ini teridentifikasi kerap keluar masuk area perbatasan di antara Provinsi Kaltim "
+                    "dan Provinsi Kalimantan Tengah (Kalteng). Personel tim memantau langsung seluruh aktivitasnya sekaligus melindungi "
+                    "dari perburuan liar.",
                     style:
                     TextStyle(fontSize: 15,color: Colors.black87)),
+
               )
             ],
           ),

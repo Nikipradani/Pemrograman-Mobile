@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  image_picker: ^0.6.6+5
   flutter:
     sdk: flutter
 
@@ -54,7 +55,14 @@ flutter:
     - assets/img/edelweis.jpg
     - assets/img/raflesia.jpg
     - assets/img/anggrekbulan.jpg
+    - assets/img/elangjawa.jpeg
+    - assets/img/harimausumatera.jpeg
+    - assets/img/badakjawa.jpeg
     - assets/img/author.jpg
+    - assets/img/berita1.jpg
+    - assets/img/paus.jpg
+    - assets/img/lumut.jpg
+    - assets/img/daftar.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

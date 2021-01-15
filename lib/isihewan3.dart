@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sdgs15/tumbuhan.dart';
+import 'package:sdgs15/hewan.dart';
 
-class isitumbuhan2 extends StatefulWidget {
+class isihewan3 extends StatefulWidget {
   @override
-  _isitumbuhan2State createState() => _isitumbuhan2State();
+  _isihewan3State createState() => _isihewan3State();
 }
 
-class _isitumbuhan2State extends State<isitumbuhan2> {
+class _isihewan3State extends State<isihewan3> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +23,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
                   onTap: (){
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context){
-                          return tumbuhan();
+                          return hewan();
                         }));
                   },
                   child: Icon(
                     Icons.arrow_back,color: Colors.white,size: 30,
                   ),
                 ),
-                Text("Edelweis Jawa",
+                Text("Elang Jawa",
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
@@ -44,29 +44,28 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
             children:<Widget> [
               Padding(
                 padding: const EdgeInsets.all(12),
-                child: Text('Bunga Edelweis Jawa',
+                child: Text('Elang Jawa',
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.lightGreen)),
               ),
-              Image.asset("assets/img/edelweis.jpg"),
+              Image.asset("assets/img/elangjawa.jpeg"),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/img/raflesia.jpg"),
+                  backgroundImage: AssetImage("assets/img/author.jpg"),
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Oleh : Firratus Saadah',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
+                    Text('Oleh : Alif Rachman Saputro',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                     Text('18 November 2020',style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold,color: Colors.grey)),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga edelweis jawa terancam punah saat ini, Anaphalis javanica, atau yang secara "
-                    "populer sebagai edelweis jawa atau Bunga Senduro, adalah tumbuhan endemik zona alpina/montana"
-                    "di berbagai pegunungan tinggi Nusantara. Tumbuhan ini dapat mencapai ketinggian 8 meter dan dapat "
-                    "memiliki batang besar kaki manusia walaupun umumnya tidak melebihi 1 meter.",
+                child: Text("Elang Jawa merupakan salah satu hewan langka yang di lindungi di indonesia. "
+                    "Elang jawa (Nisaetus bartelsi) adalah salah satu spesies elang berukuran sedang dari keluarga Accipitridae "
+                    "dan genus Nisaetus yang endemik di Pulau Jawa.",
                     style:
                     TextStyle(fontSize: 15,color: Colors.black87)),
               )

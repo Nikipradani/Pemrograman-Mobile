@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sdgs15/tumbuhan.dart';
+import 'package:sdgs15/hewan.dart';
 
-class isitumbuhan2 extends StatefulWidget {
+class isihewan1 extends StatefulWidget {
   @override
-  _isitumbuhan2State createState() => _isitumbuhan2State();
+  _isihewan1State createState() => _isihewan1State();
 }
 
-class _isitumbuhan2State extends State<isitumbuhan2> {
+class _isihewan1State extends State<isihewan1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +23,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
                   onTap: (){
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context){
-                          return tumbuhan();
+                          return hewan();
                         }));
                   },
                   child: Icon(
                     Icons.arrow_back,color: Colors.white,size: 30,
                   ),
                 ),
-                Text("Edelweis Jawa",
+                Text("Badak Jawa",
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
@@ -44,29 +44,30 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
             children:<Widget> [
               Padding(
                 padding: const EdgeInsets.all(12),
-                child: Text('Bunga Edelweis Jawa',
+                child: Text('Badak Jawa',
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.lightGreen)),
               ),
-              Image.asset("assets/img/edelweis.jpg"),
+              Image.asset("assets/img/badakjawa.jpeg"),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/img/raflesia.jpg"),
+                  backgroundImage: AssetImage("assets/img/author.jpg"),
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Oleh : Firratus Saadah',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
+                    Text('Oleh : Niki Putri Hadi Pradani',style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
                     Text('18 November 2020',style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold,color: Colors.grey)),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga edelweis jawa terancam punah saat ini, Anaphalis javanica, atau yang secara "
-                    "populer sebagai edelweis jawa atau Bunga Senduro, adalah tumbuhan endemik zona alpina/montana"
-                    "di berbagai pegunungan tinggi Nusantara. Tumbuhan ini dapat mencapai ketinggian 8 meter dan dapat "
-                    "memiliki batang besar kaki manusia walaupun umumnya tidak melebihi 1 meter.",
+                child: Text("Badak jawa, atau badak bercula-satu kecil (Rhinoceros sondaicus) adalah anggota famili Rhinocerotidae "
+                    "dan satu dari lima badak yang masih ada. Badak ini masih termasuk ke dalam genus yang sama dengan badak india "
+                    "dan memiliki kulit bermosaik yang menyerupai baju baja. Badak ini memiliki panjang 3,1–3,2 m dan tinggi 1,4–1,7 m. "
+                    "Badak ini lebih kecil daripada badak india dan lebih dekat dalam besar tubuh dengan badak hitam. "
+                    "Ukuran culanya biasanya lebih sedikit daripada 20 cm, lebih kecil daripada cula spesies badak lainnya.",
                     style:
                     TextStyle(fontSize: 15,color: Colors.black87)),
               )

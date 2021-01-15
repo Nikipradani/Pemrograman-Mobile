@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sdgs15/tumbuhan.dart';
+import 'package:sdgs15/hewan.dart';
 
-class isitumbuhan2 extends StatefulWidget {
+class isihewan2 extends StatefulWidget {
   @override
-  _isitumbuhan2State createState() => _isitumbuhan2State();
+  _isihewan2State createState() => _isihewan2State();
 }
 
-class _isitumbuhan2State extends State<isitumbuhan2> {
+class _isihewan2State extends State<isihewan2> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +23,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
                   onTap: (){
                     Navigator.pop(context,
                         MaterialPageRoute(builder: (context){
-                          return tumbuhan();
+                          return hewan();
                         }));
                   },
                   child: Icon(
                     Icons.arrow_back,color: Colors.white,size: 30,
                   ),
                 ),
-                Text("Edelweis Jawa",
+                Text("Harimau Sumatera",
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
@@ -44,14 +44,14 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
             children:<Widget> [
               Padding(
                 padding: const EdgeInsets.all(12),
-                child: Text('Bunga Edelweis Jawa',
+                child: Text('Harimau Sumatera',
                     style:
                     TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.lightGreen)),
               ),
-              Image.asset("assets/img/edelweis.jpg"),
+              Image.asset("assets/img/harimausumatera.jpeg"),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/img/raflesia.jpg"),
+                  backgroundImage: AssetImage("assets/img/author.jpg"),
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,10 +63,13 @@ class _isitumbuhan2State extends State<isitumbuhan2> {
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text("Bunga edelweis jawa terancam punah saat ini, Anaphalis javanica, atau yang secara "
-                    "populer sebagai edelweis jawa atau Bunga Senduro, adalah tumbuhan endemik zona alpina/montana"
-                    "di berbagai pegunungan tinggi Nusantara. Tumbuhan ini dapat mencapai ketinggian 8 meter dan dapat "
-                    "memiliki batang besar kaki manusia walaupun umumnya tidak melebihi 1 meter.",
+                child: Text("Harimau Sumatera merupakan salah satu hewan langka yang di lindungi di indonesia. "
+                    "Harimau sumatra (bahasa Latin: Panthera tigris sumatrae) adalah subspesies harimau yang habitat aslinya di pulau Sumatra,"
+                    " dan merupakan satu dari enam subspesies harimau yang masih bertahan hidup hingga saat ini dan termasuk dalam "
+                    "klasifikasi satwa kritis yang terancam punah (critically endangered) dalam daftar merah spesies terancam yang "
+                    "dirilis Lembaga Konservasi Dunia IUCN. Populasi liar diperkirakan antara 400-500 ekor, terutama hidup di "
+                    "taman-taman nasional di Sumatra. Uji genetik mutakhir telah mengungkapkan tanda-tanda genetik yang unik, yang "
+                    "menandakan bahwa subspesies ini mungkin berkembang menjadi spesies terpisah, bila berhasil lestari.",
                     style:
                     TextStyle(fontSize: 15,color: Colors.black87)),
               )
